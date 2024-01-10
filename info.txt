@@ -1,0 +1,13 @@
+node1 public address: 0x82849b5e251a693AD43e7eB74eF807981c725244
+password: msiddha2@unl.edu
+
+node2 public address: 0xc247AFD8F6310a223FdB7D6a55175f860A33F6fB
+password: msiddha2@unl.edu
+
+
+enode: enode://860ff668ebd9433c16fd1788a827077d1f4636ad6c409a3ce7c70f0cc7654b098fb40064f4dbcdcc2dfd24379a116132dbde093bd79cb248626796f17f38f4d9@127.0.0.1:0?discport=3035
+
+geth --datadir node1 --port 30306 --bootnodes "enode://860ff668ebd9433c16fd1788a827077d1f4636ad6c409a3ce7c70f0cc7654b098fb40064f4dbcdcc2dfd24379a116132dbde093bd79cb248626796f17f38f4d9@127.0.0.1:0?discport=3035"  --networkid 123454321 --unlock 0x82849b5e251a693AD43e7eB74eF807981c725244 --password password.txt --authrpc.port 8551 --mine --miner.etherbase 0x82849b5e251a693AD43e7eB74eF807981c725244
+
+
+geth --datadir node2 --port 30307 --bootnodes "enode://860ff668ebd9433c16fd1788a827077d1f4636ad6c409a3ce7c70f0cc7654b098fb40064f4dbcdcc2dfd24379a116132dbde093bd79cb248626796f17f38f4d9@127.0.0.1:0?discport=3035"  --networkid 123454321 --unlock 0xc247AFD8F6310a223FdB7D6a55175f860A33F6fB --password password.txt --authrpc.port 8552
